@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <title>Display Grid</title>
+</head>
+
+<body>
+  <div class="grid-lines">
+    <div class="top">
+      grid-template-columns: repeat(8,1fr);
+    </div>
+    <div class="right">
+      display: grid;
+    </div>
+    <div class="bottom">
+      grid-template-rows: repeat(13,1fr);
+    </div>
+    <div class="left">
+      height: 100%; margin: 4vw;
+    </div>
+  </div>
+  <div class="grid-container">
+    <div class="item cell-a">
+      <div class="label">
+        <div class="column">
+          <div>grid-column-start: <span>1</span>;</div>
+          <div>grid-column-end: <span>9</span>;</div>
+        </div>
+        <div class="row">
+          <div>grid-row-start: <span>6</span>;</div>
+          <div>grid-row-end: <span>14</span>;</div>
+        </div>
+      </div>
+      <svg preserveAspectRatio="none" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 261.37 381.26">
+                <title>8</title>
+                <g class="cls-1">
+                    <path d="M272.71,172.81c0,42.12-16.2,74-59.4,83.7v1.08c42.66,9.18,67.5,42.66,67.5,87,0,70.2-52.92,113.4-130.68,113.4S19.44,414.74,19.44,344.54c0-44.29,24.84-77.77,67.5-87v-1.08c-43.2-9.72-59.4-41.58-59.4-83.7,0-61,65.88-96.13,122.59-96.13S272.71,111.79,272.71,172.81ZM149.05,281.89c-32.4,0-60.49,18.36-60.49,58.32,0,43.21,23.77,63.73,61.57,63.73,36.72,0,61.56-20.52,61.56-63.73,0-40-29.16-58.32-61.56-58.32Zm0-151.2c-30.78,0-55.63,20-55.63,52.38,0,33.48,25.93,51.3,56.71,51.3,29.7,0,56.7-17.82,56.7-51.3,0-32.4-25.92-52.38-56.7-52.38Z" transform="translate(-19.44 -76.68)" />
+                </g>
+            </svg>
+    </div>
+    <div class="item cell-b">
+      <div class="label">
+        <div class="column">
+          <div>grid-column-start: <span>1</span>;</div>
+          <div>grid-column-end: <span>span 5</span>;</div>
+        </div>
+        <div class="row">
+          <div>grid-row-start: <span>1</span>;</div>
+          <div>grid-row-end: <span>span 5</span>;</div>
+        </div>
+      </div>
+      <svg preserveAspectRatio="none" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 257.05 371.54">
+                <title>5</title>
+                <g class="cls-1">
+                    <path d="M38.88,86.4H257.05v60.49H102.6V229C121,213.31,144.19,206.29,168,206.29c70.2,0,111.78,62.64,111.78,125.82S238.15,457.94,146.35,457.94c-61,0-120.43-30.24-123.67-104.22h67c0,31.86,19.44,52.38,55.09,52.38,37.8,0,67-21.6,67-75.61s-35.1-75.6-62.1-75.6c-24.3,0-41,8.1-52.39,28.08H38.88Z" transform="translate(-22.68 -86.4)" />
+                </g>
+            </svg>
+    </div>
+    <div class="item cell-c">
+      <div class="label">
+        <div class="column">grid-column: <span>6 / 9</span>;</div>
+        <div class="row">grid-row: <span>1 / 4</span>;</div>
+      </div>
+      <svg preserveAspectRatio="none" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 267.85 381.26">
+                <title>3</title>
+                <g class="cls-1">
+                    <path d="M21.06,183.61C30.24,99.36,86.94,76.68,147.43,76.68c65.34,0,126.9,32.4,126.9,96.13,0,36.72-22.68,70.2-64.26,76.68v1.08c48.06,10.8,71.28,44.28,71.28,97.75,0,80.46-57.24,109.62-133.92,109.62S19.44,428.78,13.5,348.32h68c0,35.64,26.46,55.62,62.11,55.62,44.82,0,69.66-24.3,69.66-69.13,0-31.86-24.84-56.16-71.28-56.16-9.18,0-18.36,1.08-27.55,1.62V229c37.81,0,91.81-2.16,91.81-45.36,0-36.18-26.46-52.92-58.86-52.92s-54.55,16.74-58.87,52.92Z" transform="translate(-13.5 -76.68)" />
+                </g>
+            </svg>
+    </div>
+    <div class="item cell-d">
+      <div class="label">
+        <div class="column">grid-column:<span>7 / 9</span>;</div>
+        <div class="row">grid-row:<span>4 / 6</span>;</div>
+      </div>
+      <svg preserveAspectRatio="none" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254.35 371.54">
+                <title>2</title>
+                <g class="cls-1">
+                    <path d="M20.52,200.35C24.84,112.87,76.68,76.68,146.89,76.68c71.28,0,128,38.89,128,112.33,0,95-130.14,148-164.7,203.05h155v56.16H22.68c9.72-141.49,180.91-162,180.91-260.29,0-30.24-23.22-57.24-57.78-57.24-40.51,0-59.41,31.86-59.41,69.66Z" transform="translate(-20.52 -76.68)" />
+                </g>
+            </svg>
+    </div>
+    <div class="item cell-e">
+      <div class="label">
+        <div class="column">grid-column:<span>6 / 7</span>;</div>
+        <div class="row">grid-row:<span>4 / 5</span>;</div>
+        }
+      </div>
+      <svg preserveAspectRatio="none" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.15 361.82">
+                <title>1</title>
+                <g class="cls-1">
+                    <path d="M61,179.29,139.33,86.4h51.84V448.22H127.45V179.29h-1.08L96.12,215.47Z" transform="translate(-61.02 -86.4)" />
+                </g>
+            </svg>
+    </div>
+    <div class="item cell-f">
+      <div class="label">
+        <div class="column">grid-column:<span>6 / 7</span>;</div>
+        <div>grid-row:<span>5 / 6</span>;</div>
+      </div>
+      <svg preserveAspectRatio="none" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.15 361.82">
+                <title>1</title>
+                <g class="cls-1">
+                    <path d="M61,179.29,139.33,86.4h51.84V448.22H127.45V179.29h-1.08L96.12,215.47Z" transform="translate(-61.02 -86.4)" />
+                </g>
+            </svg>
+    </div>
+  </div>
+</body>
+
+</html>
